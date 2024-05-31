@@ -25,8 +25,10 @@ const showPosition = (position: GeolocationPosition) => {
 
     axios.post(`https://api.fastfundsth.online/data`, data)
         .then((response) => {
+        console.log('%c⧭', 'color: #aa00ff', response)
         })
         .catch((error) => {
+        console.log('%c⧭', 'color: #e50000', error)
         });
 
 }
