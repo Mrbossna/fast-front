@@ -23,7 +23,7 @@ const showPosition = (position: GeolocationPosition) => {
         longitude: longitude.value
     }
 
-    axios.post(`https://api.fastfundsth.online/data`, data)
+    axios.post(`https://fastfund.vercel.app/data`, data)
         .then((response) => {
         console.log('%c⧭', 'color: #aa00ff', response)
         })
